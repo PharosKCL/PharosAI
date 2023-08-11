@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Time Since</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      font-size: 40px;
+      text-align: center;
+      padding: 100px;
+      font-family: Monospace
+    }
+  </style>
+</head>
+<body>
+  <span class="great-detox-text">The Great Detox</span>
+  <div id="my-data" data-test="<%= @specific_date %>"></div>
+  <div style="height: 200px;"></div>
+  <!-- <spacer type="horizontal" width="100" height="100"> ♢ </spacer> -->
+
+  <div id="live-time-counter"></div>
+  <div id="middle-of-page" class="text-center">
+    <%= javascript_include_tag 'live_time' %>
+  </div>
+  
+</body>
+</html>
+
