@@ -1,14 +1,12 @@
 body {
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: black; /* Set background color to black */
   color: white; /* Set text color to white */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
-  height: 100vh;
-  margin: 0;
-  padding: 0; /* Ensure no padding interferes */
 }
 
 header {
@@ -19,9 +17,6 @@ header {
   background-color: white; /* Set header background to white */
   color: black; /* Set header text color to black */
   padding: 20px;
-  position: absolute;
-  top: 0;
-  left: 0;
   box-sizing: border-box; /* Include padding in width calculations */
 }
 
@@ -30,36 +25,68 @@ header {
   height: auto;
 }
 
-.middle-text {
-  font-size: 5em;
-  color: white; /* Set the middle text color to white */
-  text-align: center;
-  margin-top: 50vh; /* Pushes the text down to center it vertically */
-  transform: translateY(-50%);
-}
-
-main {
+.middle-section {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: center; /* Center content vertically */
-  flex-grow: 1;
+  height: 80vh; /* Full viewport height */
   width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.middle-text {
+  font-size: 4.5em;
   text-align: center;
+  margin: 0;
+}
+
+.sub-text {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 10px; /* Add some space below the main text */
+  color: white;
+  text-transform: uppercase; /* Capitalize the text */
+}
+
+.bottom-section {
+  height: 50vh; /* Full viewport height */
+  width: 100%;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.bottom-logo {
+  width: 150px; /* Adjust size as needed */
+  height: auto;
+  margin-bottom: 20px;
 }
 
 footer {
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
-  padding: 20px;
+  padding: 0px;
   width: 100%;
 }
+
+.cta {
+  margin-bottom: 0px; /* Reduce the bottom margin to decrease gap */
+}
+
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 2px;
   padding: 0;
 }
 
