@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(223, 225, 232);
+    color: rgb(76, 17, 48);
+    background-image: url('helix.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 150px;
+    margin: 20px;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+.welcome, .cta {
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-btn {
+    background-color: rgb(76, 17, 48);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-btn:hover {
+    background-color: rgb(120, 20, 60);
+}
+
