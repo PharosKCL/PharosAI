@@ -1,40 +1,70 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(223, 225, 232);
-    color: rgb(76, 17, 48);
-    background-image: url('helix.svg');
-    background-size: cover;
-    background-position: center;
+  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  height: 100vh;
+  margin: 0;
+  padding: 0; /* Ensure no padding interferes */
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100vw; /* Use viewport width to cover the entire screen */
+  background-color: white; /* Set header background to white */
+  color: black; /* Set header text color to black */
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box; /* Include padding in width calculations */
 }
 
 .logo {
-    width: 150px;
-    margin: 20px;
+  width: 225px;
+  height: auto;
 }
 
-header, footer {
-    text-align: center;
-    padding: 20px;
+.middle-text {
+  font-size: 5em;
+  color: white; /* Set the middle text color to white */
+  text-align: center;
+  margin-top: 50vh; /* Pushes the text down to center it vertically */
+  transform: translateY(-50%);
 }
 
-header h1 {
-    font-size: 1.5em;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
 }
 
-.welcome, .cta {
-    padding: 20px;
-    text-align: center;
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
 }
 
-.contact-btn {
-    background-color: rgb(76, 17, 48);
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
 }
 
-.contact-btn:hover {
-    background-color: rgb(120, 20, 60);
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Set nav link color to black */
 }
 
