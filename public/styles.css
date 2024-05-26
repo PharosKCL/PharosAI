@@ -42,6 +42,7 @@ header {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
+  border-right: .15em solid white; /* The cursor */
 }
 
 @keyframes typing {
@@ -56,8 +57,12 @@ header {
 
 .middle-text span {
   display: inline-block;
-  animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
-  border-right: .15em solid white; /* The cursor */
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.middle-text.blink-off span {
+  animation: typing 4s steps(40, end);
+  border-right: none; /* Hide cursor */
 }
 
 .sub-text {
