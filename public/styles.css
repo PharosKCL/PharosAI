@@ -40,6 +40,24 @@ header {
   font-size: 4.5em; /* Set the font size to 4.5em */
   text-align: center;
   margin: 0;
+  border-right: .15em solid white; /* The cursor */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+.middle-text span {
+  display: inline-block;
+  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 }
 
 .sub-text {
@@ -51,7 +69,7 @@ header {
 }
 
 .bottom-section {
-  min-height: 55vh; /* Adjusted to fill the remaining space */
+  min-height: 25vh; /* Adjusted to fill the remaining space */
   width: 100%;
   background-color: white;
   color: black;
@@ -71,7 +89,12 @@ header {
 }
 
 .cta {
-  margin-bottom: 1px; /* Reduce the bottom margin to decrease gap */
+  margin-bottom: 5px; /* Reduce the bottom margin to decrease gap */
+}
+
+.cta p {
+  margin: 0; /* Remove default margin */
+  font-size: 1em; /* Adjust font size if necessary */
 }
 
 footer {
@@ -80,5 +103,17 @@ footer {
   text-align: center;
   padding: 0; /* Remove padding to decrease gap */
   width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black; /* Set nav link color to black */
 }
 
