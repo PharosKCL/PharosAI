@@ -2,8 +2,8 @@ body {
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: black; /* Set background color to black */
-  color: white; /* Set text color to white */
+  background-color: black;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,11 +13,11 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100vw; /* Use viewport width to cover the entire screen */
-  background-color: white; /* Set header background to white */
-  color: black; /* Set header text color to black */
+  width: 100vw;
+  background-color: white;
+  color: black;
   padding: 20px;
-  box-sizing: border-box; /* Include padding in width calculations */
+  box-sizing: border-box;
 }
 
 .logo {
@@ -30,17 +30,16 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh; /* 75% of the viewport height */
+  height: 75vh;
   width: 100%;
   background-color: black;
   color: white;
 }
 
 .middle-text {
-  font-size: 4.5em; /* Set the font size to 4.5em */
+  font-size: 4.5em;
   text-align: center;
   margin: 0;
-  border-right: .15em solid white; /* The cursor */
   white-space: nowrap;
   overflow: hidden;
 }
@@ -57,19 +56,20 @@ header {
 
 .middle-text span {
   display: inline-block;
-  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+  animation: typing 4s steps(40, end) forwards, blink-caret .75s step-end infinite;
+  border-right: .15em solid white; /* The cursor */
 }
 
 .sub-text {
   font-size: 1.5em;
   text-align: center;
-  margin-top: 10px; /* Add some space below the main text */
+  margin-top: 10px;
   color: white;
-  text-transform: uppercase; /* Capitalize the text */
+  text-transform: uppercase;
 }
 
 .bottom-section {
-  min-height: 25vh; /* Adjusted to fill the remaining space */
+  min-height: 25vh;
   width: 100%;
   background-color: white;
   color: black;
@@ -78,30 +78,30 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 20px 10px; /* Reduce padding */
+  padding: 20px 20px 10px;
   box-sizing: border-box;
 }
 
 .bottom-logo {
-  width: 150px; /* Adjust size as needed */
+  width: 150px;
   height: auto;
-  margin-bottom: 10px; /* Adjust margin */
+  margin-bottom: 10px;
 }
 
 .cta {
-  margin-bottom: 5px; /* Reduce the bottom margin to decrease gap */
+  margin-bottom: 5px;
 }
 
 .cta p {
-  margin: 0; /* Remove default margin */
-  font-size: 1em; /* Adjust font size if necessary */
+  margin: 0;
+  font-size: 1em;
 }
 
 footer {
   background-color: white;
   color: black;
   text-align: center;
-  padding: 0; /* Remove padding to decrease gap */
+  padding: 0;
   width: 100%;
 }
 
@@ -114,6 +114,6 @@ nav ul {
 
 nav ul li a {
   text-decoration: none;
-  color: black; /* Set nav link color to black */
+  color: black;
 }
 

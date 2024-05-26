@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  const text = "Navigating the path to a cancer free world";
+  const text = "Navigating the path to a cancer free world.";
   let index = 0;
   const speed = 100; // typing speed in milliseconds
 
