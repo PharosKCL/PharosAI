@@ -118,15 +118,19 @@ nav ul li a {
 Media Queries
 @media (min-width: 768px) {
   .middle-text {
-    font-size: 4.5em; Larger font size for larger screens
+    font-size: 4.5em;
+  }
+
+  .logo {
+	  width: 225px;
   }
 
   .sub-text {
-    font-size: 1.5em; Larger font size for larger screens
+    font-size: 1.5em;
   }
 
   .bottom-logo {
-    width: 150px; Larger logo size for larger screens
+    width: 150px; 
   }
 }
 
