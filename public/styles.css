@@ -39,7 +39,7 @@ header {
 }
 
 .middle-text {
-  font-size: 1.3em; /* Smaller font size for better readability */
+  font-size: 1.2em; /* Smaller font size for better readability */
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
