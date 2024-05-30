@@ -67,7 +67,8 @@ header {
 }
 
 .middle-text.blink-off span {
-  animation: typing 4s steps(40, end), typing-caret .75s step-end 1;
+  animation: typing 4s steps(40, end), typing-caret .75s step-end 1 4s;
+  border-right: none;
 }
 
 .sub-text {
