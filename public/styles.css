@@ -39,7 +39,7 @@ header {
 }
 
 .middle-text {
-  font-size: 2em; /* Smaller font size for better readability */
+  font-size: 1.5em; /* Smaller font size for better readability */
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -126,12 +126,21 @@ nav ul li a {
   color: black;
 }
 
-/* Media Queries */
+
 @media (min-width: 768px) {
   .logo {
     width: 225px; /* Larger size for larger screens */
   }
 
   .middle-text {
-    font-size: 4
+    font-size: 4.5em; /* Larger font size for larger screens */
+  }
 
+  .sub-text {
+    font-size: 1.5em; /* Larger font size for larger screens */
+  }
+
+  .bottom-logo {
+    width: 150px; /* Larger logo size for larger screens */
+  }
+}
