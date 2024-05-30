@@ -56,6 +56,11 @@ header {
   50% { border-color: white; }
 }
 
+@keyframes typing-caret {
+  from { border-color: white; }
+  to { border-color: transparent; }
+}
+
 .middle-text span {
   display: inline-block;
   animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
