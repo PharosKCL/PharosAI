@@ -115,7 +115,7 @@ nav ul li a {
   color: black;
 }
 
-/* Media Queries
+Media Queries
 @media (min-width: 768px) {
   .middle-text {
     font-size: 4.5em; Larger font size for larger screens
@@ -128,5 +128,5 @@ nav ul li a {
   .bottom-logo {
     width: 150px; Larger logo size for larger screens
   }
-}*/
+}
 
