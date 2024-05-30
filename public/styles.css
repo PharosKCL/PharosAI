@@ -22,6 +22,7 @@ header {
 
 .logo {
   width: 50%; /* Adjust size for smaller screens */
+  max-width: 150px;
   height: auto;
 }
 
@@ -115,7 +116,6 @@ nav ul li a {
   color: black;
 }
 
-Media Queries
 @media (min-width: 768px) {
   .middle-text {
     font-size: 4.5em;
