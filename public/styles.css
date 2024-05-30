@@ -21,8 +21,8 @@ header {
 }
 
 .logo {
-  width: 50%; /* Adjust size for smaller screens */
-  max-width: 150px;
+  width: 100%;
+  max-width: 150px; /* Set a maximum width for the logo */
   height: auto;
 }
 
@@ -43,7 +43,7 @@ header {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  border-right: .15em solid white;
+  border-right: .15em solid white; /* The cursor */
 }
 
 @keyframes typing {
@@ -64,6 +64,10 @@ header {
 .middle-text span {
   display: inline-block;
   animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.middle-text.blink-off span {
+  animation: typing 4s steps(40, end), typing-caret .75s step-end 1;
 }
 
 .sub-text {
@@ -87,7 +91,8 @@ header {
 }
 
 .bottom-logo {
-  width: 50%;
+  width: 100%;
+  max-width: 150px; /* Set a maximum width for the bottom logo */
   height: auto;
   margin-bottom: 10px;
 }
@@ -121,21 +126,12 @@ nav ul li a {
   color: black;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
-  .middle-text {
-    font-size: 4.5em;
-  }
-
   .logo {
-    width: 150px;
+    width: 225px; /* Larger size for larger screens */
   }
 
-  .sub-text {
-    font-size: 1.5em;
-  }
-
-  .bottom-logo {
-    width: 150px; 
-  }
-}
+  .middle-text {
+    font-size: 4
 
