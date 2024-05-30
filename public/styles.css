@@ -13,7 +13,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   background-color: white;
   color: black;
   padding: 20px;
@@ -21,7 +21,7 @@ header {
 }
 
 .logo {
-  width: 50%; /* Adjust size for smaller screens */
+  width: 225px;
   height: auto;
 }
 
@@ -30,19 +30,19 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 75vh;
+  height: 75vh;
   width: 100%;
   background-color: black;
   color: white;
-  text-align: center;
 }
 
 .middle-text {
-  font-size: 2em; /* Smaller font size for better readability */
+  font-size: 4.5em;
+  text-align: center;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  border-right: .15em solid white;
+  border-right: .15em solid white; /* The cursor */
 }
 
 @keyframes typing {
@@ -60,14 +60,21 @@ header {
   animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 }
 
+.middle-text.blink-off span {
+  animation: typing 4s steps(40, end);
+  border-right: none; /* Hide cursor */
+}
+
 .sub-text {
-  font-size: 1em; /* Smaller font size for better readability */
+  font-size: 1.5em;
+  text-align: center;
   margin-top: 10px;
   color: white;
   text-transform: uppercase;
 }
 
 .bottom-section {
+  min-height: 25vh;
   width: 100%;
   background-color: white;
   color: black;
@@ -81,7 +88,7 @@ header {
 }
 
 .bottom-logo {
-  width: 50%;
+  width: 150px;
   height: auto;
   margin-bottom: 10px;
 }
@@ -113,20 +120,5 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: black;
-}
-
-/* Media Queries */
-@media (min-width: 768px) {
-  .middle-text {
-    font-size: 4.5em; /* Larger font size for larger screens */
-  }
-
-  .sub-text {
-    font-size: 1.5em; /* Larger font size for larger screens */
-  }
-
-  .bottom-logo {
-    width: 150px; /* Larger logo size for larger screens */
-  }
 }
 
