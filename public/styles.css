@@ -9,23 +9,6 @@ body {
   align-items: center;
 }
 
-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  background-color: white;
-  color: black;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.logo {
-  width: 100%;
-  max-width: 150px; /* Set a maximum width for the logo */
-  height: auto;
-}
-
 .video-background {
   position: fixed;
   top: 0;
@@ -53,6 +36,24 @@ header, .middle-section, .bottom-section {
   position: relative;
   z-index: 1;
 }
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 100%;
+  max-width: 150px; /* Set a maximum width for the logo */
+  height: auto;
+}
+
 
 .middle-section {
   display: flex;
