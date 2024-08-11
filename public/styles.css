@@ -1,13 +1,16 @@
 /* General Body Styling */
 body {
-  font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   margin: 0;
   padding: 0;
   background-color: black;
-  color: white;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+body, .footer-text, .bottom-logo-text, .cta p a {
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* Video Background Styling */
@@ -45,10 +48,26 @@ header {
   box-sizing: border-box;
 }
 
+.social-icons {
+  margin-left: auto;
+}
+
+.linkedin-icon {
+  width: 24px;
+  height: 24px;
+}
+
 .logo {
-  width: 100%;
-  max-width: 150px; /* Set a maximum width for the logo */
+  width: 40%;
+  max-width: 40px; /* Set a maximum width for the logo */
   height: auto;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px; /* Adjust space between the logo and text */
 }
 
 /* Middle Section Styling */
@@ -57,18 +76,34 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 75vh;
+  min-height: 100vh;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .middle-text {
-  font-size: 2em; /* Adjust font size */
+  font-size: 1em; /* Adjust font size */
+  font-weight: bold;
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-  border-right: .15em solid white; /* The cursor */
+  position: absolute;
+  top: 25%; /* Position the text 75% up from the bottom */
+  transform: translateY(-25%);
+  color: white !important;
 }
+
+.left-text {
+  position: absolute;
+  bottom: 15%; /* Adjust to position the text towards the bottom */
+  left: 20%; /* Adjust to position the text towards the left side */
+  font-size: 1.5em; /* Adjust font size */
+  max-width: 800px; /* Set a max-width to control the text width */
+  color: white;
+  text-align: left;
+}
+
 
 @keyframes typing {
   from { width: 0; }
@@ -82,45 +117,94 @@ header {
 
 .middle-text span {
   display: inline-block;
-  animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
-}
-
-.sub-text {
-  font-size: 1em; /* Adjust font size */
-  margin-top: 10px;
   color: white;
-  text-transform: uppercase;
+  animation: typing 4s steps(40, end);
 }
 
-/* Bottom Section Styling */
-.bottom-section {
+
+.bottom-section1 {
   width: 100%;
   background-color: white;
+  font-weight: bold;
   color: black;
   display: flex;
+  min-height: 40vh;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
   padding: 20px 20px 10px;
   box-sizing: border-box;
 }
 
-.bottom-logo {
+
+/* Bottom Section Styling */
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px;
   width: 100%;
-  max-width: 150px; /* Set a maximum width for the bottom logo */
+  min-height: 35vh;
+  text-align: center;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  margin-bottom: 10px;
+}
+
+.bottom-logo {
+  width: 40%;
+  max-width: 40px; /* Set a maximum width for the bottom logo */
   height: auto;
   margin-bottom: 10px;
 }
 
-.cta {
-  margin-bottom: 5px;
+
+.bottom-logo-text {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+  margin-left: 10px; /* Adjust space between the logo and text */
 }
 
-.cta p {
-  margin: 0;
-  font-size: 1em;
+.bottom-section .cta p a {
+  color: white !important; /* Ensure the email link is white */
+  text-decoration: none !important; /* Remove underline */
 }
+
+.bottom-section .cta p a:hover {
+  text-decoration: underline !important; /* Optional: Add underline on hover */
+}
+
+.footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: black; /* Match with the bottom section */
+  color: white;
+  width: 100%;
+}
+
+.footer-line {
+  border: none;
+  border-top: 1px solid white; /* Creates the thin white line */
+  margin: 0 auto 10px;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.footer-text {
+  font-size: 0.9em;
+  color: white;
+  text-align: left;
+}
+
 
 /* Footer Styling */
 footer {
@@ -147,11 +231,11 @@ nav ul li a {
 /* Media Queries for Responsive Design */
 @media (min-width: 768px) {
   .logo {
-    width: 225px; /* Larger size for larger screens */
+    width: 125px; /* Larger size for larger screens */
   }
 
   .middle-text {
-    font-size: 4.5em; /* Larger font size for larger screens */
+    font-size: 2.5em; /* Larger font size for larger screens */
   }
 
   .sub-text {

@@ -1,40 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PharosAI</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Video Background -->
   <div class="video-background">
     <video autoplay muted loop id="background-video">
-      <source src=https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+      <source src="videos/background6.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </div>
+
+  <!-- Header with Logo -->
   <header>
-    <img src="logo.png" alt="PharosAI Logo" class="logo">
+    <img src="pharos_logo_white.png" alt="PharosAI Logo" class="logo">
+    <span class="logo-text">   PharosAI</span>
+      <div class="social-icons">
+    <a href="https://www.linkedin.com/company/pharosai" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn" class="linkedin-icon">
+    </a>
+  </div>
   </header>
+
+  <!-- Main Content Section -->
   <div class="middle-section">
     <div class="middle-text">
       <span id="typing-text"></span>
     </div>
-    <!--<div class="sub-text">
-      STEALTH MODEL
-    </div>-->
   </div>
-  <div class="bottom-section">
-    <img src="pharos_logo.png" alt="New Logo" class="bottom-logo">
+
+
+  <!-- Bottom Section -->
+  <div class="bottom-section1">
     <div>
-      <section class="cta">
-        <h2>Join us Xin revolutionizing healthcare with AI.</h2>
-        <p><a href="mailto:info@pharosai.co.uk">info@pharosai.co.uk</a></p>
+      <section class="about">
+        <h2>About us</h2>
+    </div>
+	    <p>PharosAl is a partnership between King's College London, Barts Cancer Institute and two NHS trusts, revolutionising Al-assisted healthcare. We aim to build high-quality, enriched patient datasets and educate the workforce for Al-enabled care. Your support will significantly accelerate our mission to deliver the right treatment, at the right time, for all patients, regardless of their socioeconomic background..</p>
+    </div>
       </section>
     </div>
   </div>
-  <footer id="contact">
-  </footer>
+
+  <!-- Bottom Section -->
+  <div class="bottom-section">
+	  <div class="logo-container">
+    <img src="pharos_logo_white.png" alt="New Logo" class="bottom-logo">
+    <span class="bottom-logo-text">   PharosAI</span>
+    </div>
+    <div class="test">
+	<h2>Join us in democratising AI for cancer.</h2>
+    </div>
+    <div>
+      <section class="cta">
+        <p>Inquiries: <a href="mailto:info@pharosai.co.uk">info@pharosai.co.uk</a></p>
+      </section>
+    </div>
+  </div>
+
+  <!-- Footer -->
+
+<footer class="footer">
+  <hr class="footer-line">
+  <p class="footer-text">© 2024 PharosAI ® All Rights Reserved</p>
+</footer>
+
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
