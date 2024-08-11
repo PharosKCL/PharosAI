@@ -26,6 +26,34 @@ header {
   height: auto;
 }
 
+.video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  z-index: -1;
+}
+
+header, .middle-section, .bottom-section {
+  position: relative;
+  z-index: 1;
+}
+
 .middle-section {
   display: flex;
   flex-direction: column;
