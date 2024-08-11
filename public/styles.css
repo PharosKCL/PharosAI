@@ -1,3 +1,4 @@
+/* General Body Styling */
 body {
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   margin: 0;
@@ -9,6 +10,7 @@ body {
   align-items: center;
 }
 
+/* Video Background Styling */
 .video-background {
   position: fixed;
   top: 0;
@@ -32,17 +34,13 @@ body {
   z-index: -1;
 }
 
-header, .middle-section, .bottom-section {
-  position: relative;
-  z-index: 1;
-}
-
+/* Header Styling */
 header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  background-color: transparent;
+  background-color: transparent; /* Allow background video to show through */
   padding: 20px;
   box-sizing: border-box;
 }
@@ -53,19 +51,19 @@ header {
   height: auto;
 }
 
-
+/* Middle Section Styling */
 .middle-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 75vh;
   width: 100%;
   text-align: center;
 }
 
 .middle-text {
-  font-size: 1.1em; /* Smaller font size for better readability */
+  font-size: 2em; /* Adjust font size */
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -82,28 +80,19 @@ header {
   50% { border-color: white; }
 }
 
-@keyframes typing-caret {
-  from { border-color: white; }
-  to { border-color: transparent; }
-}
-
 .middle-text span {
   display: inline-block;
   animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
 }
 
-.middle-text.blink-off span {
-  animation: typing 4s steps(40, end), typing-caret .75s step-end 1 4s;
-  border-right: none;
-}
-
 .sub-text {
-  font-size: 1em; /* Smaller font size for better readability */
+  font-size: 1em; /* Adjust font size */
   margin-top: 10px;
   color: white;
   text-transform: uppercase;
 }
 
+/* Bottom Section Styling */
 .bottom-section {
   width: 100%;
   background-color: white;
@@ -113,7 +102,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px 20px 20px;
+  padding: 20px 20px 10px;
   box-sizing: border-box;
 }
 
@@ -133,6 +122,7 @@ header {
   font-size: 1em;
 }
 
+/* Footer Styling */
 footer {
   background-color: white;
   color: black;
@@ -141,6 +131,7 @@ footer {
   width: 100%;
 }
 
+/* Navigation Styling */
 nav ul {
   list-style: none;
   display: flex;
@@ -153,14 +144,14 @@ nav ul li a {
   color: black;
 }
 
-
+/* Media Queries for Responsive Design */
 @media (min-width: 768px) {
   .logo {
     width: 225px; /* Larger size for larger screens */
   }
 
   .middle-text {
-    font-size: 3em; /* Larger font size for larger screens */
+    font-size: 4.5em; /* Larger font size for larger screens */
   }
 
   .sub-text {
@@ -171,3 +162,4 @@ nav ul li a {
     width: 150px; /* Larger logo size for larger screens */
   }
 }
+
