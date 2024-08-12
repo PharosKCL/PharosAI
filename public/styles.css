@@ -125,10 +125,9 @@ header {
 .bottom-section1 {
   width: 100%;
   background-color: white;
-  font-weight: bold;
   color: black;
   display: flex;
-  min-height: 40vh;
+  min-height: 80vh;
   flex-direction: column;
   justify-content: left;
   align-items: left;
@@ -136,6 +135,57 @@ header {
   padding: 20px 20px 10px;
   box-sizing: border-box;
 }
+
+.bottom-section1 .about h2,
+.bottom-section1 .about p {
+  margin-left: 5%; /* Aligns with the "Navigating the path" text */
+}
+
+
+.bottom-section1 .about h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900; /* Extra bold */
+  font-size: 1.8em;
+  margin-bottom: 80px;
+}
+
+.bottom-section1 .about p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  margin: 0 auto;
+  max-width: 800px;
+  color: white;
+}
+
+
+.partners {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.partners h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900; /* Extra bold */
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.partners-logos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 80px;
+  justify-items: center;
+  margin-top: 80px;
+}
+
+.partners-logos img {
+  max-width: 200px; /* Adjust as needed */
+  height: auto;
+}
+
+
 
 
 /* Bottom Section Styling */
