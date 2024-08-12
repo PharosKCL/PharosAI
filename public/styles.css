@@ -138,54 +138,75 @@ header {
 
 .bottom-section1 .about h2,
 .bottom-section1 .about p {
-  margin-left: 10%; /* Aligns with the "Navigating the path" text */
+  margin-left: 5%;
 }
 
 
 .bottom-section1 .about h2 {
   font-weight: 900; /* Extra bold */
-  font-size: 1.8em;
+  font-size: 2.5em;
   margin-bottom: 40px;
   color: black;
 }
 
+p strong {
+    font-weight: 900; /* Extra bold */
+    font-size: 1em; /* Same size as paragraph text */
+    margin-right: 5px; /* Space between the bold text and the following text */
+}
+
 .bottom-section1 .about p {
   font-weight: 400;
-  font-size: 1em;
-  max-width: 1000px;
+  font-size: 1.2em;
+  max-width: 1500px;
   color: black;
-  margin-left: 10%;
-  margin-bottom: 50px;
+  margin-left: 5%;
+  margin-bottom: 5px;
+  margin-top: 40px;
 }
+
+.logo-container {
+    display: flex;
+    justify-content: space-around; /* Distribute logos evenly */
+    align-items: center; /* Center align logos vertically */
+    margin-top: 30px; /* Space above and below the logo row */
+    margin-bottom; 10px;
+    gap: 60px;
+}
+
+.partner-logo {
+    max-width: 200px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 
 
 .partners {
-  margin-top: 80px;
-  text-align: center;
+    margin-top: 50px; /* Space above the section */
+    text-align: center;
 }
 
 .partners h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900; /* Extra bold */
-  font-size: 1.8em;
-  margin-bottom: 20px;
-  color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900; /* Extra bold */
+    font-size: 2.5em;
+    margin-bottom: 30px; /* Space below the heading */
+    color: black;
+    margin-top; 5px;
 }
 
 .partners-logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 80px;
-  justify-items: center;
-  margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three logos per row */
+    gap: 20px;
+    justify-items: center;
 }
 
 .partners-logos img {
-  max-width: 200px; /* Adjust as needed */
-  height: auto;
+    max-width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px; /* Space between rows of logos */
 }
-
-
 
 
 /* Bottom Section Styling */
@@ -194,7 +215,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #3c246c;
+  background-color: #00071d;
   color: white;
   padding: 20px;
   width: 100%;
@@ -237,7 +258,7 @@ header {
 .footer {
   text-align: center;
   padding: 10px 0;
-  background-color: #3c246c; /* Match with the bottom section */
+  background-color: #00071d; /* Match with the bottom section */
   color: white;
   width: 100%;
 }
@@ -259,7 +280,7 @@ header {
 /* Footer Styling */
 footer {
   background-color: white;
-  color: #3c246c;
+  color: #00071d;
   text-align: center;
   padding: 0;
   width: 100%;
