@@ -138,24 +138,24 @@ header {
 
 .bottom-section1 .about h2,
 .bottom-section1 .about p {
-  margin-left: 5%; /* Aligns with the "Navigating the path" text */
+  margin-left: 10%; /* Aligns with the "Navigating the path" text */
 }
 
 
 .bottom-section1 .about h2 {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 900; /* Extra bold */
   font-size: 1.8em;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+  color: black;
 }
 
 .bottom-section1 .about p {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1em;
-  margin: 0 auto;
-  max-width: 800px;
-  color: white;
+  max-width: 1000px;
+  color: black;
+  margin-left: 10%;
+  margin-bottom: 50px;
 }
 
 
@@ -194,7 +194,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #3c246c;
   color: white;
   padding: 20px;
   width: 100%;
@@ -237,7 +237,7 @@ header {
 .footer {
   text-align: center;
   padding: 10px 0;
-  background-color: black; /* Match with the bottom section */
+  background-color: #3c246c; /* Match with the bottom section */
   color: white;
   width: 100%;
 }
@@ -259,7 +259,7 @@ header {
 /* Footer Styling */
 footer {
   background-color: white;
-  color: black;
+  color: #3c246c;
   text-align: center;
   padding: 0;
   width: 100%;
