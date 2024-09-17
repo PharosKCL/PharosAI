@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: redirect('/index.html')
+  root to: redirect('public/index.html')
 
   # Defines the root path route ("/")
   # root "articles#index"
