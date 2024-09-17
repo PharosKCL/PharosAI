@@ -1,1 +1,1 @@
-web: python -m http.server $PORT
+web: bundle exec puma -C config/puma.rb
