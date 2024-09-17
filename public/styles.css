@@ -59,11 +59,12 @@ header {
   width: 40%;
   max-width: 40px; /* Set a maximum width for the logo */
   height: auto;
+  margin-left: 25px;
 }
 
 .logo-text {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 500;
   color: black;
   margin-left: 10px; /* Adjust space between the logo and text */
 }
@@ -82,12 +83,12 @@ header {
 
 .middle-text {
   font-size: 2.5em; /* Adjust font size as needed */
-  font-weight: bold;
+  font-weight: 500;
   color: black; /* Ensure the text is black */
   margin: 0;
   line-height: 1.2em; /* Adjust line spacing */
   text-align: left; /* Align text to the left */
-  max-width: 600px; /* Set the maximum width to keep it aligned on the left */
+  max-width: 900px; /* Set the maximum width to keep it aligned on the left */
   padding-right: 50%; /* Optional: Adjust padding to push text to the left */
   white-space: pre-wrap; /* Ensures the line breaks are respected */
   position: absolute;
@@ -107,8 +108,9 @@ header {
 .partner-section h2 {
   font-family: 'Montserrat', sans-serif; /* Font of your choice */
   font-size: 2.5em;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 75px; /* Space between heading and content */
+  margin-left: 50px;
 }
 
 .partners-logos {
@@ -124,13 +126,74 @@ header {
   height: auto;
 }
 
+.joinus-section {
+  background-color: #f9f9f9; /* Light background for contrast */
+  padding: 40px 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Ensure text is centered */
+  position: relative;
+  height: 280px; /* Adjust height as needed */
+}
+
+.joinus-section p {
+  font-family: 'Montserrat', sans-serif; /* Apply the font */
+  font-size: 1.5em; /* Adjust font size */
+  font-weight: 400; /* Set to normal weight */
+  margin-bottom: 20px; /* Space below the text */
+}
 
 
+.joinus-logo {
+  position: absolute; /* Position logo absolutely */
+  bottom: 0px; /* Align the logo to the bottom */
+  left: 65px; /* Align the logo to the right */
+  padding: 20px; /* Add padding around the logo */
+}
+
+.joinus-logo-img {
+  max-width: 60px; /* Adjust the size of the logo */
+  height: auto;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: grey;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+}
 
 
+.contact-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
 
+.bottom-line {
+  width: 90%;
+  border-bottom: 1px solid #555; /* Black line */
+  margin: 20px auto; /* Space above and below the line */
+}
 
+.copyright {
+  margin-top: 20px;
+  color: grey;
+}
 
+.copyright p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9em; /* Smaller font for copyright */
+  margin: 0;
+}
 
 
 @keyframes typing {
