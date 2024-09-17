@@ -1,7 +1,4 @@
 Rails.application.routes.draw do
-
-  root to: redirect('public/index.html')
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  # You can add your other routes here if necessary
+  # For static index.html in the public folder, no root route is needed
 end
