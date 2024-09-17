@@ -91,8 +91,47 @@ header {
   padding-right: 50%; /* Optional: Adjust padding to push text to the left */
   white-space: pre-wrap; /* Ensures the line breaks are respected */
   position: absolute;
-  top: 20%; /* Push the text upwards by 10% *
+  top: 20%;
 }
+
+.partner-section {
+  background-color: white; /* White background */
+  min-height: 50vh;
+  color: black; /* Black text for contrast */
+  padding: 40px 20px; /* Add padding for spacing */
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Ensure the section stretches the full width */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.partner-section h2 {
+  font-family: 'Montserrat', sans-serif; /* Font of your choice */
+  font-size: 2.5em;
+  font-weight: 700;
+  margin-bottom: 75px; /* Space between heading and content */
+}
+
+.partners-logos {
+  display: flex; /* Use Flexbox to position logos in a row */
+  justify-content: space-around; /* Equally space the logos */
+  align-items: center; /* Center logos vertically */
+  gap: 20px; /* Space between the logos */
+  flex-wrap: wrap; /* Ensure logos wrap if screen size is too small */
+}
+
+.partner-logo {
+  max-width: 150px; /* Control the size of the logos */
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
 
 @keyframes typing {
   from { width: 0; }
