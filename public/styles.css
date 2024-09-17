@@ -7,11 +7,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Montserrat';
 }
 
-body, .footer-text, .bottom-logo-text, .cta p a {
-  font-family: 'Montserrat', sans-serif;
-}
 
 /* Video Background Styling */
 .video-background {
@@ -66,7 +64,7 @@ header {
 .logo-text {
   font-size: 1.5em;
   font-weight: bold;
-  color: white;
+  color: black;
   margin-left: 10px; /* Adjust space between the logo and text */
 }
 
@@ -83,27 +81,18 @@ header {
 }
 
 .middle-text {
-  font-size: 1em; /* Adjust font size */
+  font-size: 2.5em; /* Adjust font size as needed */
   font-weight: bold;
+  color: black; /* Ensure the text is black */
   margin: 0;
-  white-space: nowrap;
-  overflow: hidden;
+  line-height: 1.2em; /* Adjust line spacing */
+  text-align: left; /* Align text to the left */
+  max-width: 600px; /* Set the maximum width to keep it aligned on the left */
+  padding-right: 50%; /* Optional: Adjust padding to push text to the left */
+  white-space: pre-wrap; /* Ensures the line breaks are respected */
   position: absolute;
-  top: 25%; /* Position the text 75% up from the bottom */
-  transform: translateY(-25%);
-  color: white !important;
+  top: 20%; /* Push the text upwards by 10% *
 }
-
-.left-text {
-  position: absolute;
-  bottom: 15%; /* Adjust to position the text towards the bottom */
-  left: 20%; /* Adjust to position the text towards the left side */
-  font-size: 1.5em; /* Adjust font size */
-  max-width: 800px; /* Set a max-width to control the text width */
-  color: white;
-  text-align: left;
-}
-
 
 @keyframes typing {
   from { width: 0; }
@@ -112,179 +101,15 @@ header {
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  50% { border-color: white; }
+  50% { border-color: black; }
 }
 
 .middle-text span {
   display: inline-block;
-  color: white;
+  color: black;
   animation: typing 4s steps(40, end);
 }
 
-
-.bottom-section1 {
-  width: 100%;
-  background-color: white;
-  color: black;
-  display: flex;
-  min-height: 80vh;
-  flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
-  padding: 20px 20px 10px;
-  box-sizing: border-box;
-}
-
-.bottom-section1 .about h2,
-.bottom-section1 .about p {
-  margin-left: 5%;
-}
-
-
-.bottom-section1 .about h2 {
-  font-weight: 900; /* Extra bold */
-  font-size: 2.5em;
-  margin-bottom: 40px;
-  color: black;
-}
-
-p strong {
-    font-weight: 900; /* Extra bold */
-    font-size: 1em; /* Same size as paragraph text */
-    margin-right: 5px; /* Space between the bold text and the following text */
-}
-
-.bottom-section1 .about p {
-  font-weight: 400;
-  font-size: 1.2em;
-  max-width: 1500px;
-  color: black;
-  margin-left: 5%;
-  margin-bottom: 5px;
-  margin-top: 40px;
-}
-
-.logo-container {
-    display: flex;
-    justify-content: space-around; /* Distribute logos evenly */
-    align-items: center; /* Center align logos vertically */
-    margin-top: 30px; /* Space above and below the logo row */
-    margin-bottom; 10px;
-    gap: 60px;
-}
-
-.partner-logo {
-    max-width: 200px; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
-}
-
-
-
-.partners {
-    margin-top: 50px; /* Space above the section */
-    text-align: center;
-}
-
-.partners h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900; /* Extra bold */
-    font-size: 2.5em;
-    margin-bottom: 30px; /* Space below the heading */
-    color: black;
-    margin-top; 5px;
-}
-
-.partners-logos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three logos per row */
-    gap: 20px;
-    justify-items: center;
-}
-
-.partners-logos img {
-    max-width: 150px; /* Adjust size as needed */
-    height: auto;
-    margin-bottom: 20px; /* Space between rows of logos */
-}
-
-
-/* Bottom Section Styling */
-.bottom-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #00071d;
-  color: white;
-  padding: 20px;
-  width: 100%;
-  min-height: 35vh;
-  text-align: center;
-}
-
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center content horizontally */
-  margin-bottom: 10px;
-}
-
-.bottom-logo {
-  width: 40%;
-  max-width: 40px; /* Set a maximum width for the bottom logo */
-  height: auto;
-  margin-bottom: 10px;
-}
-
-
-.bottom-logo-text {
-  font-size: 1.5em;
-  font-weight: bold;
-  color: white;
-  margin-left: 10px; /* Adjust space between the logo and text */
-}
-
-.bottom-section .cta p a {
-  color: white !important; /* Ensure the email link is white */
-  text-decoration: none !important; /* Remove underline */
-}
-
-.bottom-section .cta p a:hover {
-  text-decoration: underline !important; /* Optional: Add underline on hover */
-}
-
-.footer {
-  text-align: center;
-  padding: 10px 0;
-  background-color: #00071d; /* Match with the bottom section */
-  color: white;
-  width: 100%;
-}
-
-.footer-line {
-  border: none;
-  border-top: 1px solid white; /* Creates the thin white line */
-  margin: 0 auto 10px;
-  width: 100%; /* Adjust the width as needed */
-}
-
-.footer-text {
-  font-size: 0.9em;
-  color: white;
-  text-align: left;
-}
-
-
-/* Footer Styling */
-footer {
-  background-color: white;
-  color: #00071d;
-  text-align: center;
-  padding: 0;
-  width: 100%;
-}
 
 /* Navigation Styling */
 nav ul {
@@ -307,14 +132,6 @@ nav ul li a {
 
   .middle-text {
     font-size: 2.5em; /* Larger font size for larger screens */
-  }
-
-  .sub-text {
-    font-size: 1.5em; /* Larger font size for larger screens */
-  }
-
-  .bottom-logo {
-    width: 150px; /* Larger logo size for larger screens */
   }
 }
 

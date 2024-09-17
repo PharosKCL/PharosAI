@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-  const text = "Navigating the path to AI-powered cancer care.";
+  const text = "Navigating the path to\n      AI powered cancer care.";
   let index = 0;
   const speed = 100; // typing speed in milliseconds
   const typingText = document.getElementById("typing-text");
