@@ -2,28 +2,11 @@
 <html>
 <head>
   <title>Time Since</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-size: 40px;
-      text-align: center;
-      padding: 100px;
-      font-family: Monospace
-    }
-  </style>
 </head>
-<body>
+<body class="bg-black text-white text-4xl text-center p-24 sm:p-12 font-mono">
   <span class="great-detox-text">The Great Detox</span>
   <div id="my-data" data-test="<%= @specific_date.strftime('%Y-%m-%dT%H:%M:%S%z') %>"></div>
-  <div style="height: 200px;"></div>
-  <!-- <spacer type="horizontal" width="100" height="100"> ♢ </spacer> -->
-
-  <div id="live-time-counter"></div>
-  <div id="middle-of-page" class="text-center">
-    <%= javascript_include_tag 'live_time' %>
-  </div>
-  
+  <div class="h-48"></div> <!-- Spacer with Tailwind class -->
 </body>
 </html>
 

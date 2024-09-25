@@ -4,3 +4,4 @@
 //= link_tree ../../../vendor/javascript .js
 //= link live_time.js
 
+//= link_tree ../builds

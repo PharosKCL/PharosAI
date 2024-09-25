@@ -224,16 +224,3 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: black;
-}
-
-/* Media Queries for Responsive Design */
-@media (min-width: 768px) {
-  .logo {
-    width: 125px; /* Larger size for larger screens */
-  }
-
-  .middle-text {
-    font-size: 2.5em; /* Larger font size for larger screens */
-  }
-}
-
