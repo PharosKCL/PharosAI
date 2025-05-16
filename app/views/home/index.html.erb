@@ -6,7 +6,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PharosAI</title>
-  <link rel="stylesheet" href="styles.css">
+  <%= stylesheet_link_tag "landing", "data-turbo-track": "reload" %>
+
 </head>
 <body>
   <!-- Video Background -->
@@ -64,6 +65,7 @@
 
   <!-- JavaScript -->
   <script src="script.js"></script>
+  <%= javascript_importmap_tags "typing" %>
 </body>
 </html>
 
