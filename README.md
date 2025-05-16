@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="app/asset/images/pharos_logo_white.png" alt="PharosAI Logo" width="200"/>
+  <img src="app/assets/images/pharos_logo_white.png" alt="PharosAI Logo" width="200"/>
 </p>
 
 ## Overview
