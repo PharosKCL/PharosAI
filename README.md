@@ -4,7 +4,7 @@
 
 ## Overview
 
-PharosAI is a platform dedicated to navigating the path to AI-assisted healthcare. This repository contains the source code for the PharosAI landing page, showcasing our mission to revolutionize healthcare with AI.
+PharosAI is a platform dedicated to navigating the path to AI-assisted healthcare. This repository contains the source code for the PharosAI landing page, showcasing our mission to revolutionise healthcare with AI.
 
 ## Getting Started
 
